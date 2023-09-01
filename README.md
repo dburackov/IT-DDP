@@ -40,29 +40,47 @@
 
 ## Схема данных
 
-1. Пользователь
-    + ID
-    + ФИО
-    + контакты
-    + bio
+1. User
+    + id
+    + login
+    + email
 
-2. Церковь
-    + ID
-    + адрес
-    + контакты
-    + информация
+2. Church
+    + id
+    + name
     
-3. Запись на требу
-    + пользователь
-    + церковь
-    + треба
-    + дата
-    + сумма пожертвования
-    + информация и комментарии 
-    
-4. Подписка на молебны
-    + пользователь
-    + церьковь
-    + сумма пожертвования
-    + повод
-    + дата списания 
+3. Adress
+    + id
+    + church_id
+    + city
+    + street
+    + unit
+
+4. Contact
+    + id
+    + church_id
+    + name
+    + contact 
+
+5. Schedule    
+    + id
+    + church_id
+    + schedule
+
+6. Review
+    + id
+    + user_id
+    + church_id
+    + content
+    + date
+
+7. Mark
+    + id
+    + review_id
+    + value
+
+8. treba
+    + id
+    + user_id
+    + kind
+    + purpose
