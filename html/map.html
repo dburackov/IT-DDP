@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Cmpatible" content="IE=edge">
+    <!--    <meta name="keywords" content="some">-->
+    <title>Бог поможет</title>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="shortcut icon" href="/images/title2.png" type="image/png">
+</head>
+
+<body class="page">
+
+<header class="header page__header">
+    <img class="logo header__logo" src="/images/title2.png" alt="cross">
+    <a class="button header__map button_theme_big" href="map.html">Карта</a>
+    <div class="search header__search">
+        <img class="search__img" src="/images/search.png">
+        <input class="search__input" type="text" placeholder="Поиск церкви">
+    </div>
+    <a class="button header__login button_theme_big" href="auth.html">Войти</a>
+</header>
+
+<main class="main">
+    <section class="church">
+        <div class="church__cover">
+            <img class="church__img" src="/images/church.jpg" alt="church">
+            <a class="church__link" href="#"><img class="church__link-img" src="/images/site-img.png"></a>
+        </div>
+        <h1 class="church__name">Храм иконы Божьей Матери Взыскание погибших</h1>
+        <div class="rating">
+            <div class="rating__star">★</div>
+            <div class="rating__star">★</div>
+            <div class="rating__star">★</div>
+            <div class="rating__star">★</div>
+            <div class="rating__star">★</div>
+            <div class="rating__mark">4.1</div>
+        </div>
+        <nav class="scroll-menu church__scroll-menu">
+
+            <input class="scroll-menu__input scroll-menu__input_overview" type="radio" name="A" id="overview" checked>
+            <input class="scroll-menu__input scroll-menu__input_treby" type="radio" name="A" id="treby">
+            <input class="scroll-menu__input scroll-menu__input_donate" type="radio" name="A" id="donate">
+            <input class="scroll-menu__input scroll-menu__input_reviews" type="radio" name="A" id="reviews">
+
+            <div class="scroll-menu__controls">
+                <label class="scroll-menu__controls-item" for="overview">Обзор</label>
+                <label class="scroll-menu__controls-item" for="treby">Требы</label>
+                <label class="scroll-menu__controls-item" for="donate">Пожертвовать</label>
+                <label class="scroll-menu__controls-item" for="reviews">Отзывы</label>
+            </div>
+
+            <section class="scroll-menu__content scroll-menu__content_overview">
+                обзор
+            </section>
+            <section class="scroll-menu__content scroll-menu__content_treby">
+                требы
+            </section>
+            <section class="scroll-menu__content scroll-menu__content_donate">
+                пожертвовать
+            </section>
+            <section class="scroll-menu__content scroll-menu__content_reviews">
+                отзывы
+            </section>
+
+        </nav>
+    </section>
+
+    <div class="map"></div>
+</main>
+
+<nav class="mobile-nav">
+    <a class="mobile-nav__item" href="map.html">
+        <img class="mobile-nav__img" src="/images/map-nav-3.png" alt="">
+    </a>
+    <a class="mobile-nav__item" href="map.html">
+        <img class="mobile-nav__img" src="/images/search-nav-2.png" alt="">
+    </a>
+    <a class="mobile-nav__item" href="auth.html">
+        <img class="mobile-nav__img" src="/images/user-nav.png" alt="">
+    </a>
+</nav>
+
+<footer class="footer page__footer">
+    <ul class="contact-list footer__contact-list">
+        <li class="contact footer__contact">
+            <a href="https://twitter.com/" target="_blank"><img class="footer__img" src="/images/twitter.png" alt=""></a>
+        </li>
+        <li class="contact footer__contact">
+            <a href="https://www.instagram.com/" target="_blank"><img class="footer__img" src="/images/instagram.png" alt=""></a>
+        </li>
+        <li class="contact footer__contact">
+            <a href="https://vk.com/" target="_blank"><img class="footer__img" src="/images/vk.png" alt=""></a>
+        </li>
+        <li class="contact footer__contact">
+            <a href="https://web.facebook.com/" target="_blank"><img class="footer__img" src="/images/facebook.png" alt=""></a>
+        </li>
+        <li class="contact footer__contact">
+            <a href="https://dzen.ru/" target="_blank"><img class="footer__img" src="/images/yazen.png" alt=""></a>
+        </li>
+    </ul>
+
+    <a class="button footer__button button_theme_big button_border_none" href="#">Соглашение</a>
+</footer>
+</body>
+</html>

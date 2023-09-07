@@ -1,0 +1,27 @@
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .mobile-nav {
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        background-color: #162D67;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 2px solid #D7AC58;
+    }
+
+    .mobile-nav__item {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 40px;
+    }
+
+    .mobile-nav__img {
+        height: 40px;
+    }
+}

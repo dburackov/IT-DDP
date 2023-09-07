@@ -1,0 +1,14 @@
+@import "button/button.css";
+@import "page/page.css";
+@import "header/header.css";
+@import "footer/footer.css";
+@import "search/search.css";
+@import "auth/auth-main.css";
+@import "map-page/map-page.css";
+@import "moblie-nav/mobile-nav.css";
+
+
+@font-face {
+    font-family: "Excentra Pro Light";
+    src: url("../fonts/ExcentraPro-Light.ttf");
+}
