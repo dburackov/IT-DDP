@@ -8,7 +8,7 @@
 
 ## Deploy Link
 
-
+https://dburackov.github.io/IT-DDP/
 
 ## Функционал
 
