@@ -1,0 +1,128 @@
+.account {
+    min-height: 100%;
+    padding: 60px 300px 0 400px;
+    position: relative;
+}
+
+.account__name {
+    color: #000;
+    font-family: "Excentra Pro Light", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.account__email {
+    color: #D7AC58;
+    font-family: "Proxima Nova Lt", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.account__name {
+    margin-bottom: 10px;
+}
+
+.account__email {
+    margin-top: 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #939393;
+}
+
+.account__label {
+    display: block;
+}
+
+.account__label {
+    font-size: 20px;
+    font-family: "Proxima Nova Lt", sans-serif;
+    font-weight: 300;
+    line-height: normal;
+    color: #000000;
+    font-style: normal;
+}
+
+
+.account__list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.order {
+    width: 240px;
+    min-height: 240px;
+    padding: 10px;
+}
+
+.order {
+    border-radius: 20px;
+    background: rgba(249, 221, 166, 0.35);
+}
+
+.order__border {
+    border-radius: 10px;
+    border: 1px solid #D7AC58;
+    padding: 10px;
+    min-height: 220px;
+    position: relative;
+}
+
+.order__name {
+    color: #C8863C;
+    font-family: "Excentra Pro Light", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.order__unit {
+    color: #000;
+    font-family: "Proxima Nova Lt", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.order__unit_heavy {
+    font-weight: 600;
+}
+
+.order__unit_small {
+    font-size: 12px;
+}
+
+.order__name {
+    margin: 0;
+}
+
+.order__unit {
+    margin-top: 10px;
+    margin-bottom: 0;
+    max-width: 200px;
+}
+
+.order__bottom {
+    position: absolute;
+    bottom: 10px;
+}
+
+.order_theme_sub {
+    background: rgba(166, 184, 249, 0.35);
+}
+
+.order__border_theme_sub {
+    border: 1px solid #003ACB;
+}
+
+.order__name_theme_sub {
+    color: #003ACB;
+}
