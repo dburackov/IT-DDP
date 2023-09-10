@@ -51,16 +51,124 @@
                 <label class="scroll-menu__controls-item" for="reviews">Отзывы</label>
             </div>
 
-            <section class="scroll-menu__content scroll-menu__content_overview">
-                обзор
+            <section class="overview scroll-menu__content">
+                <div class="overview__unit">
+                    <img class="overview__unit-img" src="images/address.png" alt="">
+                    <h2 class="overview__unit-name">адресс</h2>
+                </div>
+                <div class="overview__content">
+                    <address class="overview__address">Минск, улица Лили Карастаянновой, 22</address>
+                </div>
+                <div class="overview__unit">
+                    <img class="overview__unit-img" src="images/contacts.png" alt="">
+                    <h2 class="overview__unit-name">контакты</h2>
+                </div>
+                <div class="overview__content">
+                    <div class="overview__contact">
+                        <div class="overview__contact-name">Дежурный</div>
+                        <div class="overview__contact-number">+375 18 3XX-0X-5X</div>
+                    </div>
+                    <div class="overview__contact">
+                        <div class="overview__contact-name">Настоятель</div>
+                        <div class="overview__contact-number">+375 18 3XX-0X-5X</div>
+                    </div>
+                    <div class="overview__contact">
+                        <div class="overview__contact-name">Лавка</div>
+                        <div class="overview__contact-number">+375 18 3XX-0X-5X</div>
+                    </div>
+                    <div class="overview__site">church12qwe.by</div>
+                </div>
+                <div class="overview__unit">
+                    <img class="overview__unit-img overview__unit-img_height_20" src="images/schedule.png" alt="">
+                    <h2 class="overview__unit-name">рассписание</h2>
+                </div>
+                <div class="overview__content">
+                    <div class="overview__schedule overview__schedule_border">
+                        <div class="overview__schedule-day">Открыто до</div>
+                        <div class="overview__schedule-time ">20:00</div>
+                    </div>
+                    <div class="overview__schedule">
+                        <div class="overview__schedule-day">Понедельник</div>
+                        <div class="overview__schedule-time ">08:00 - 20:00</div>
+                    </div>
+                    <div class="overview__schedule">
+                        <div class="overview__schedule-day">Вторник</div>
+                        <div class="overview__schedule-time ">08:00 - 20:00</div>
+                    </div>
+                    <div class="overview__schedule">
+                        <div class="overview__schedule-day">Среда</div>
+                        <div class="overview__schedule-time ">08:00 - 20:00</div>
+                    </div>
+                    <div class="overview__schedule">
+                        <div class="overview__schedule-day">Четверг</div>
+                        <div class="overview__schedule-time ">08:00 - 20:00</div>
+                    </div>
+                    <div class="overview__schedule">
+                        <div class="overview__schedule-day">Пятница</div>
+                        <div class="overview__schedule-time ">08:00 - 20:00</div>
+                    </div>
+                    <div class="overview__schedule">
+                        <div class="overview__schedule-day">Суббота</div>
+                        <div class="overview__schedule-time ">08:00 - 20:00</div>
+                    </div>
+                    <div class="overview__schedule overview__schedule_border">
+                        <div class="overview__schedule-day">Воскресенье</div>
+                        <div class="overview__schedule-time ">06:00 - 20:00</div>
+                    </div>
+                    <div class="space"></div>
+                </div>
             </section>
-            <section class="scroll-menu__content scroll-menu__content_treby">
-                требы
+
+            <section class="treby scroll-menu__content">
+                <p class="treby__unit">
+                    <label class="treby__label" for="type">Выберите требу</label>
+                    <select class="treby__select" name="type" id="type">
+                        <option value="commemoration">Поминовение</option>
+                        <option value="prayer-service">Молебен</option>
+                        <option value="candle">Свеча</option>
+                        <option value="sorokoust">Сорокоуст</option>
+                    </select>
+                </p>
+                <p class="treby__unit">
+                    <label class="treby__label" for="purpose">Цель требы</label>
+                    <select class="treby__select" name="purpose" id="purpose">
+                        <option value="health">За здравие</option>
+                        <option value="peace">За упокой</option>
+                    </select>
+                </p>
+                <p class="treby__unit">
+                    <label class="treby__label" for="name">Имена тех, о ком молиться</label>
+                    <input class="treby__input-names" type="text" id="name" placeholder="Введите имена в церковном написании">
+                </p>
+                <div class="treby__subscription">
+                    <input class="treby__chechbox" type="checkbox" id="subscription">
+                    <label class="treby__label" for="subscription">Оформить подписку</label>
+                </div>
+
+                <div class="treby__unit">
+                    <div class="treby__label">К оплате</div>
+                    <div class="treby__label treby__label_size_big">0 руб</div>
+                    <a class="button treby__button button_theme_gold" href="#">Заказать требу</a>
+                </div>
+                <div class="space"></div>
             </section>
-            <section class="scroll-menu__content scroll-menu__content_donate">
-                пожертвовать
+
+            <section class="donate scroll-menu__content">
+                <div class="donate__wrapper">
+                    <div class="donate__border">
+                        <div class="donate__text">Введите сумму, которую Вы готовы пожертвовать</div>
+                        <textarea class="donate__input-wishes">Ваше пожелание для служения...</textarea>
+<!--                        <input  type="text" placeholder="Ваше пожелание для служения...">-->
+                        <div class="donate__payment">
+                            <input class="donate__payment-input" type="text" placeholder="0.00">
+                            <div class="donate__payment-br">Br</div>
+                            <a class="button donate__button button_theme_gold" href="#">Занести</a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="scroll-menu__content scroll-menu__content_reviews">
+
+            <section class="reviews scroll-menu__content">
                 отзывы
             </section>
 
@@ -71,13 +179,13 @@
 </main>
 
 <nav class="mobile-nav">
-    <a class="mobile-nav__item" href="map.html">
+    <a class="mobile-nav__item" href="index.html">
         <img class="mobile-nav__img" src="images/map-nav-3.png" alt="">
     </a>
-    <a class="mobile-nav__item" href="map.html">
+    <a class="mobile-nav__item" href="index.html">
         <img class="mobile-nav__img" src="images/search-nav-2.png" alt="">
     </a>
-    <a class="mobile-nav__item" href="auth.html">
+    <a class="mobile-nav__item" href="html/auth.html">
         <img class="mobile-nav__img" src="images/user-nav.png" alt="">
     </a>
 </nav>
