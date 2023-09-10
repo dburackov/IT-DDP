@@ -23,7 +23,31 @@
 </header>
 
 <main class="auth-main">
+    <section class="auth">
+        <input class="auth__radio" type="radio" name="B" id="sign-in" checked>
+        <input class="auth__radio" type="radio" name="B" id="sign-up">
 
+        <div class="auth__controls">
+            <label class="auth__controls-item" for="sign-in">Вход</label>
+            <label class="auth__controls-item" for="sign-up">Регистрация</label>
+        </div>
+
+        <form class="auth-form auth__sign-in" action="#">
+            <input class="auth__input" type="email" placeholder="e-mail" required>
+            <input class="auth__input" type="password" placeholder="пароль" required>
+            <input class="auth__button" type="submit" value="Войти">
+            <div class="auth__divider">или войти через соцсети</div>
+        </form>
+
+        <form class="auth-form auth__sign-up" action="#">
+            <input class="auth__input" type="text" placeholder="имя" required>
+            <input class="auth__input" type="email" placeholder="e-mail" required>
+            <input class="auth__input" type="password" placeholder="пароль" required>
+            <input class="auth__input" type="password" placeholder="подтверждение пароля" required>
+            <input class="auth__button" type="submit" value="Зарегистрироваться">
+            <div class="auth__divider">или зазарегистрироваться через соцсети</div>
+        </form>
+    </section>
 
 </main>
 
