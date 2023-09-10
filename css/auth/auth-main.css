@@ -1,11 +1,129 @@
 
 .auth-main {
-    background-image: url("/images/cross-background.jpg");
+    background-image: url("../../images/cross-background.jpg");
     background-size: cover;
     position: relative;
     height: 100vh;
+    display: flex;
+}
+
+.auth__radio {
+    display: none;
+}
+
+.auth-form {
+    display: none;
+}
+
+#sign-in:checked ~ .auth__controls label:nth-child(1),
+#sign-up:checked ~ .auth__controls label:nth-child(2) {
+    color: #003ACB;
+    border-bottom: 2px solid #003ACB;
+}
+
+#sign-in:checked ~ .auth__sign-in {
+    display: grid;
+    grid-template-rows: auto;
+    position: relative;
+}
+
+#sign-up:checked ~ .auth__sign-up {
+    display: grid;
+    grid-template-rows: auto;
+    position: relative;
+}
+
+.auth {
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.auth {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(0, -50%);
+    width: 420px;
+}
+
+.auth__controls {
+    /*width: 100%;*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.auth__controls-item {
+    text-align: center;
+    border-bottom: 2px solid #939393;
+    padding: 10px 0 10px 0;
+}
+
+.auth__controls-item {
+    color: #444141;
+    font-family: "Proxima Nova Rg", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.auth-form {
+    position: relative;
+    margin: 0 20px 0 20px;
+}
+
+.auth__input {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.auth__input {
+    /*color: #939393;*/
+    font-family: "Proxima Nova Lt", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.auth__button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.auth__button {
+    background: #003ACB;
+    color: #FFF;
+    font-family: "Proxima Nova Lt", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.auth__divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #939393;
+    font-family: "Proxima Nova Lt", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 @media (max-width: 800px) {
+    .auth {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
+@media (max-width: 480px) {
+    .auth {
+        width: 350px;
+    }
 }

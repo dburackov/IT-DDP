@@ -1,6 +1,7 @@
 .account {
-    min-height: 100%;
-    padding: 60px 300px 0 400px;
+    min-height: 80%;
+    width: 800px;
+    margin: 60px auto;
     position: relative;
 }
 
@@ -125,4 +126,24 @@
 
 .order__name_theme_sub {
     color: #003ACB;
+}
+
+@media (max-width: 840px) {
+    .account {
+        width: 530px;
+    }
+
+    .account__list {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 560px) {
+    .account {
+        width: 360px;
+    }
+
+    .account__list {
+        justify-content: center;
+    }
 }

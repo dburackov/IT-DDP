@@ -22,3 +22,13 @@
     border: none;
 }
 
+.button_theme_gold {
+    color: #FFFFFF;
+    background-color: #D7AC58E5;
+    box-shadow: 0 0 4px 2px #D7AC58;
+
+}
+
+.button_theme_white {
+    color: #FFFFFF;
+}
